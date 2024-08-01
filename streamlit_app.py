@@ -1,18 +1,8 @@
 import streamlit as st
 import pandas as pd
-import json
-from sqlalchemy import create_engine
-import psycopg2
-from mplsoccer import VerticalPitch,Pitch
+from mplsoccer import Pitch
 from matplotlib import pyplot as plt
 from scipy.ndimage import gaussian_filter
-import plotly.tools as tls
-
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_colwidth', None)
-pd.set_option('display.max_rows', 100)
-
-import os
 
 
 # Progressive passes aim to capture this and are defined as “completed open-play passes in the attacking two-thirds of the pitch that move the ball at least 25% closer to the goal
