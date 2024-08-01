@@ -396,14 +396,14 @@ def plot_receive_pass_map(playerName):
 
 st.title("Manchester United Dashboard")
 
-all_events_2023 = pd.read_csv('Manchester United Events 2023-2024 Preprocessed.csv',index_col=0)
+all_events_2023 = pd.read_csv('data/Manchester United Events 2023-2024 Preprocessed.csv',index_col=0)
 player_list_2023 = all_events_2023[['player_name','player_id']]
 player_list_2023 = player_list_2023.drop_duplicates().dropna().sort_values('player_name').reset_index(drop=True)
-player_stats_2023 = pd.read_csv('Manchester United 2023 - 2024 Player Stats.csv',index_col=0)
-all_events_2022 = pd.read_csv('Manchester United Events 2022-2023 Preprocessed.csv',index_col=0)
+player_stats_2023 = pd.read_csv('data/Manchester United 2023 - 2024 Player Stats.csv',index_col=0)
+all_events_2022 = pd.read_csv('data/Manchester United Events 2022-2023 Preprocessed.csv',index_col=0)
 player_list_2022 = all_events_2022[['player_name','player_id']]
 player_list_2022 = player_list_2022.drop_duplicates().dropna().sort_values('player_name').reset_index(drop=True)
-player_stats_2022 = pd.read_csv('Manchester United 2022 - 2023 Player Stats.csv',index_col=0)
+player_stats_2022 = pd.read_csv('data/Manchester United 2022 - 2023 Player Stats.csv',index_col=0)
 # Sidebar for user input
 st.sidebar.title("Selection")
 
