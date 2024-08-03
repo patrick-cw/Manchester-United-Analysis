@@ -330,12 +330,12 @@ def plot_forward_pass_map(playerName):
     # Plot the completed passes
     pitch.arrows(forward_pass_success.x, forward_pass_success.y,
                 forward_pass_success.end_x, forward_pass_success.end_y, width=1.5*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, color='#2eb774', ax=ax, label='Completed Pass')
+                headwidth=3, headlength=3, color='#2eb774', ax=ax, label='Completed Pass')
 
     # Plot the other passes
     pitch.arrows(forward_pass_fail.x, forward_pass_fail.y,
                 forward_pass_fail.end_x, forward_pass_fail.end_y, width=1*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, headaxislength=10*scaling_factor,
+                headwidth=3, headlength=3, headaxislength=10*scaling_factor,
                 color='#ba4f45', ax=ax, label='Failed Pass')
 
     # Set up the legend
