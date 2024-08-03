@@ -247,12 +247,12 @@ def plot_pass_map(playerName):
     # Plot the completed passes
     pitch.arrows(pass_success.x, pass_success.y,
                 pass_success.end_x, pass_success.end_y, width=1.5*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, color='#2eb774', ax=ax, label='Completed Pass')
+                headwidth=3, headlength=3, color='#2eb774', ax=ax, label='Completed Pass')
 
     # Plot the other passes
     pitch.arrows(pass_fail.x, pass_fail.y,
                 pass_fail.end_x, pass_fail.end_y, width=1*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, headaxislength=10*scaling_factor,
+                headwidth=3, headlength=3, headaxislength=10*scaling_factor,
                 color='#ba4f45', ax=ax, label='Failed Pass')
 
     # Set up the legend
@@ -290,12 +290,12 @@ def plot_progressive_pass_map(playerName):
     # Plot the completed passes
     pitch.arrows(progressive_pass_success.x, progressive_pass_success.y,
                 progressive_pass_success.end_x, progressive_pass_success.end_y, width=1.5*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, color='#2eb774', ax=ax, label='Completed Pass')
+                headwidth=3, headlength=3, color='#2eb774', ax=ax, label='Completed Pass')
 
     # Plot the other passes
     pitch.arrows(progressive_pass_fail.x, progressive_pass_fail.y,
                 progressive_pass_fail.end_x, progressive_pass_fail.end_y, width=1*scaling_factor,
-                headwidth=3*scaling_factor, headlength=3*scaling_factor, headaxislength=10*scaling_factor,
+                headwidth=3, headlength=3, headaxislength=10*scaling_factor,
                 color='#ba4f45', ax=ax, label='Failed Pass')
 
     # Set up the legend
@@ -460,7 +460,7 @@ if season_option == "2022-2023":
     plot_receive_pass_map(playerName)
     plot_pass_map(playerName)
     plot_progressive_pass_map(playerName)
-    #plot_forward_pass_map(playerName)
+    plot_forward_pass_map(playerName)
     plot_aerial_map(playerName)
     plot_clearance_map(playerName)
     plot_recovery_map(playerName)
@@ -474,7 +474,7 @@ elif season_option == "2023-2024": #and type_option=="Player":
     plot_receive_pass_map(playerName)
     plot_pass_map(playerName)
     plot_progressive_pass_map(playerName)
-    #plot_forward_pass_map(playerName)
+    plot_forward_pass_map(playerName)
     plot_aerial_map(playerName)
     plot_clearance_map(playerName)
     plot_recovery_map(playerName)
