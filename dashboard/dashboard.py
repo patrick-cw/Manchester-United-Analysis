@@ -216,7 +216,7 @@ def plot_interception_map(playerName):
     fig, ax = pitch.draw(figsize=(6, 4))
     fig.set_facecolor('#22312b')
 
-    pitch.scatter(interception_success.x, interception_success.y, s=100*scaling_factor,marker='o', c = '#2eb774', zorder=3, ax=ax,edgecolors="black",label='Clearance')
+    pitch.scatter(interception_success.x, interception_success.y, s=100*scaling_factor,marker='o', c = '#2eb774', zorder=3, ax=ax,edgecolors="black",label='Interception')
 
     # Set up the legend
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper right')
