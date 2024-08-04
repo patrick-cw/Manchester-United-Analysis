@@ -445,36 +445,21 @@ elif season_option=="2022-2023":
 # Display selected option in the main area
 st.write(f"You selected: {season_option} Season")
 st.write(f"Full Player Stats")
-st.dataframe(player_stats_2023.set_index(player_stats_2023.columns[0]))
-
-# Display content based on the selected option
 if season_option == "2022-2023":
-    st.write(f"{playerName} Stats")
-    st.markdown('<div class="container">', unsafe_allow_html=True)
+    st.dataframe(player_stats_2022.set_index(player_stats_2022.columns[0]))
+elif season_option == "2023-2024":
+    st.dataframe(player_stats_2023.set_index(player_stats_2023.columns[0]))
 
-    player_stat.style.hide()
-    st.dataframe(player_stat.set_index(player_stat.columns[0]))
-
-    plot_shot_map(playerName)
-    plot_take_on_map(playerName)
-    plot_receive_pass_map(playerName)
-    plot_pass_map(playerName)
-    plot_progressive_pass_map(playerName)
-    plot_forward_pass_map(playerName)
-    plot_aerial_map(playerName)
-    plot_clearance_map(playerName)
-    plot_recovery_map(playerName)
-
-elif season_option == "2023-2024": #and type_option=="Player":
-    st.write(f"{playerName} Stats")
-    st.dataframe(player_stat.set_index(player_stat.columns[0]))
-    
-    plot_shot_map(playerName)
-    plot_take_on_map(playerName)
-    plot_receive_pass_map(playerName)
-    plot_pass_map(playerName)
-    plot_progressive_pass_map(playerName)
-    plot_forward_pass_map(playerName)
-    plot_aerial_map(playerName)
-    plot_clearance_map(playerName)
-    plot_recovery_map(playerName)
+st.write(f"{playerName} Stats")
+st.dataframe(player_stat.set_index(player_stat.columns[0]))
+plot_shot_map(playerName)
+plot_take_on_map(playerName)
+plot_receive_pass_map(playerName)
+plot_pass_map(playerName)
+plot_progressive_pass_map(playerName)
+plot_forward_pass_map(playerName)
+plot_aerial_map(playerName)
+plot_clearance_map(playerName)
+plot_recovery_map(playerName)
+plot_interception_map(playerName)
+plot_tackle_map(playerName)
