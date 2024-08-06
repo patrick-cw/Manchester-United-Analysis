@@ -52,7 +52,7 @@ def plot_shot_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Shot Map', fontsize=20*scaling_factor, color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Shot Map {season}', fontsize=20*scaling_factor, color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{shots_count} Total Shots', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{shot_rate}% Conversion Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.37, 1, f'{goal_count} Goals', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -89,7 +89,7 @@ def plot_aerial_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Aerial Duel Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Aerial Duel Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{aerial_success_count} Total Aerial Duels', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{aerial_rate}% Success Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.38, 1, f'{aerial_success_count} Successful', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -113,7 +113,7 @@ def plot_clearance_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper right')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Clearance Map', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Clearance Map {season}', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
     ax.text(0.5, 1, f'{clearance_success_count} Total Clearances', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(-.01, -.02, 'Data: Opta', ha='left', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'})
     ax.text(.99, -.02, 'Twitter:@patrickcw_', ha='right', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'})
@@ -136,7 +136,7 @@ def plot_recovery_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper right')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Ball Recovery Map', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Ball Recovery Map {season}', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
     ax.text(0.5, 1, f'{recovery_success_count} Total Ball Recoveries', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(-.01, -.02, 'Data: Opta', ha='left', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'})
     ax.text(.99, -.02, 'Twitter:@patrickcw_', ha='right', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'}) 
@@ -165,7 +165,7 @@ def plot_take_on_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Take On Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Take On Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{to_success_count + to_fail_count} Total Take On', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{to_rate}% Success Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.38, 1, f'{to_success_count} Successful', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -198,7 +198,7 @@ def plot_tackle_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Tackle Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Tackle Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{tackle_success_count + tackle_fail_count} Total Tackle', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{tackle_rate}% Success Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.38, 1, f'{tackle_success_count} Successful', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -222,7 +222,7 @@ def plot_interception_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper right')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Interception Map', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Interception Map {season}', fontsize=20*scaling_factor,color='white', pad=20*scaling_factor)
     ax.text(0.5, 1, f'{interception_success_count} Total Interceptions', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(-.01, -.02, 'Data: Opta', ha='left', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'})
     ax.text(.99, -.02, 'Twitter:@patrickcw_', ha='right', va='bottom', transform=ax.transAxes, fontdict={'size':12*scaling_factor, 'color':'white'}) 
@@ -261,7 +261,7 @@ def plot_pass_map(playerName):
     #fig.text(0.15, 0.62, f'{pass_fail_count} Failed', ha='left', va='baseline', fontsize=11, color='#ba4f45')
     #fig.text(0.14, 0.61, f'{pass_rate}%', ha='left', va='baseline', fontsize=11, color='white')
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Pass Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Pass Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{pass_success_count + pass_fail_count} Total Passes', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{pass_rate}% Completion Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.385, 1, f'{pass_success_count} Completed', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -302,7 +302,7 @@ def plot_progressive_pass_map(playerName):
     ax.legend(facecolor='white', handlelength=1, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Progressive Pass Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Progressive Pass Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{progressive_pass_success_count + progressive_pass_fail_count} Progressive Passes', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{progressive_pass_rate}% Completion Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.385, 1, f'{progressive_pass_success_count} Completed', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -342,7 +342,7 @@ def plot_forward_pass_map(playerName):
     ax.legend(facecolor='white', handlelength=1*scaling_factor, edgecolor='None', fontsize=12*scaling_factor, loc='upper left')
 
     # Set the title
-    ax_title = ax.set_title(f'{playerName} Forward Pass Map', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Forward Pass Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
     ax.text(0.5, 1.08, f'{forward_pass_success_count + forward_pass_fail_count} Forward Passes', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{forward_pass_rate}% Completion Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.385, 1, f'{forward_pass_success_count} Completed', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
@@ -369,7 +369,7 @@ def plot_receive_pass_map(playerName):
     pcm = pitch.heatmap(bin_statistic, ax=ax, cmap='hot', edgecolors='#22312b')
 
     # Add title and subtitle
-    ax_title = ax.set_title(f'{playerName} Receive Pass Heatmap', fontsize=20*scaling_factor, color='white', pad=20*scaling_factor)
+    ax_title = ax.set_title(f'{playerName} Receive Pass Heatmap {season}', fontsize=20*scaling_factor, color='white', pad=20*scaling_factor)
     ax.text(0.5, 1, f'{rp_count} Passes Received', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
 
     # Customize colorbar
@@ -414,6 +414,7 @@ if season_option=="2023-2024":
     )
     
     playerName=player_option
+    season=season_option
     interception_events = all_events_2023.loc[(all_events_2023.player_name==f'{playerName}')&(all_events_2023.type_display_name=='Interception')].reset_index(drop=True)
     tackle_events = all_events_2023.loc[(all_events_2023.player_name==f'{playerName}')&(all_events_2023.type_display_name=='Tackle')].reset_index(drop=True)
     take_on_events = all_events_2023.loc[(all_events_2023.player_name==f'{playerName}')&(all_events_2023.type_display_name=='TakeOn')].reset_index(drop=True)
@@ -431,6 +432,7 @@ elif season_option=="2022-2023":
         player_list_2022['player_name']
     )
     playerName=player_option
+    season=season_option
     interception_events = all_events_2022.loc[(all_events_2022.player_name==f'{playerName}')&(all_events_2022.type_display_name=='Interception')].reset_index(drop=True)
     tackle_events = all_events_2022.loc[(all_events_2022.player_name==f'{playerName}')&(all_events_2022.type_display_name=='Tackle')].reset_index(drop=True)
     take_on_events = all_events_2022.loc[(all_events_2022.player_name==f'{playerName}')&(all_events_2022.type_display_name=='TakeOn')].reset_index(drop=True)
