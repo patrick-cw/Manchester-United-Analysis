@@ -90,7 +90,7 @@ def plot_aerial_map(playerName):
 
     # Set the title
     ax_title = ax.set_title(f'{playerName} Aerial Duel Map {season}', fontsize=20*scaling_factor,color='white', pad=50*scaling_factor)
-    ax.text(0.5, 1.08, f'{aerial_success_count} Total Aerial Duels', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
+    ax.text(0.5, 1.08, f'{aerial_success_count + aerial_fail_count} Total Aerial Duels', ha='center', va='center', transform=ax.transAxes, fontsize=14*scaling_factor, color='white')
     ax.text(0.5, 1.04, f'{aerial_rate}% Success Rate', ha='center', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='white')
     ax.text(0.38, 1, f'{aerial_success_count} Successful', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#2eb774')
     ax.text(0.5, 1, f'{aerial_fail_count} Unsuccessful', ha='left', va='center', transform=ax.transAxes, fontsize=10*scaling_factor, color='#ba4f45')
